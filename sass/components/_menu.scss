@@ -1,0 +1,64 @@
+@use '../abstact/variables';
+@use '../abstact/mixins';
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__logo {
+        font: {
+            size: 33px;
+            weight: 400;
+            family: 'Pacifico';
+        }
+        color: #000;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    .shop {
+        border-left: 1px solid #000;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        color: #6C6C6C;
+        font: {
+            size: 12px;
+            weight: 400;
+            family: 'Poppins'
+        }
+        img {
+            margin-right: 5px;
+        }
+    }
+}
+
+.site-nav {
+    display: none;
+    align-items: center;
+    .site-nav__list {
+        margin-right: 40px;
+    }
+    a {
+        font: {
+            size: 12px;
+            weight: 400;
+            family: 'Poppins'
+        }
+        color: #6C6C6C;
+        text-transform: uppercase;
+    }
+}
+
+.site-nav__list a.active {
+    color: variables.$main-color;
+}
+
+@include mixins.media-sm {
+    .site-nav {
+        display: flex;
+    }
+}

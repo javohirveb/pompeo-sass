@@ -1,0 +1,10 @@
+@use './base/base';
+@use './components/menu';
+@use './layout';
+@use './pages/home';
+
+.home {
+    background-image: url(../images/home-bg.png);
+    background-position: center;
+    background-size: cover;
+}

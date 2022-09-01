@@ -1,0 +1,16 @@
+@use '../abstact/variables' as vars;
+@use '../abstact/mixins';
+
+.footer {
+    padding: 20px 40px;
+    text-align: center; 
+
+}
+
+@include mixins.media-md {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

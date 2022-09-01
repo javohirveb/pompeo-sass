@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+}
+body li {
+  list-style: none;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container .header__logo {
+  font-size: 33px;
+  font-weight: 400;
+  font-family: "Pacifico";
+  color: #000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav .shop {
+  border-left: 1px solid #000;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  color: #6C6C6C;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+nav .shop img {
+  margin-right: 5px;
+}
+
+.site-nav {
+  display: none;
+  align-items: center;
+}
+.site-nav .site-nav__list {
+  margin-right: 40px;
+}
+.site-nav a {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #6C6C6C;
+  text-transform: uppercase;
+}
+
+.site-nav__list a.active {
+  color: #AC1313;
+}
+
+@media screen and (min-width: 576px) {
+  .site-nav {
+    display: flex;
+  }
+}
+.header {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: static;
+  padding: 165px 20px;
+}
+
+.heading-two {
+  color: #D77474;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.heading-one {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+span {
+  color: #AC1313;
+  font-size: 68px;
+  font-weight: 700;
+  font-family: "Playfair Display";
+}
+
+.text-small {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Libre Franklin";
+  color: #6C6C6C;
+}
+
+.main-link {
+  display: inline-block;
+  padding: 20px 60px;
+  background-color: #AC1313;
+  margin-top: 60px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.home-img {
+  display: none;
+  position: absolute;
+  right: -25%;
+}
+
+.tags {
+  text-align: center;
+}
+
+.categories {
+  margin-top: 60px;
+}
+
+.categories-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.categories-items .categories-item {
+  width: 200px;
+  height: 200px;
+  color: wheat;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 46px 85px 124px 85px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.categories-items .categories-item img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.categories-item:nth-child(1) {
+  background-color: #E4B366;
+  border: 30px solid rgba(0, 0, 0, 0.05);
+}
+
+.categories-item:nth-child(2) {
+  background-color: #F05B10;
+  border: 30px solid rgba(0, 0, 0, 0.05);
+}
+
+.categories-item:nth-child(3) {
+  background-color: #A21010;
+  border: 30px solid rgba(0, 0, 0, 0.05);
+}
+
+.categories-content ul {
+  display: inline-block;
+  margin-top: 60px;
+}
+.categories-content ul li {
+  margin-top: 30px;
+  width: 95%;
+}
+.categories-content ul li h1 {
+  font-size: 29px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+@media screen and (min-width: 576px) {
+  .heading-one {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Poppins";
+  }
+  .home-container {
+    position: relative;
+  }
+  .home-img {
+    display: inline-block;
+  }
+  .categories-items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .categories-content ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .categories-content ul li {
+    width: 45%;
+  }
+}
+.home {
+  background-image: url(../images/home-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
