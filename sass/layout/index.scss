@@ -30,9 +30,10 @@
         weight: 700;
         family: 'Poppins';
     }
+    margin-bottom: 10px;
 }
 
-span {
+.and-span {
     color: variables.$main-color;
     font: {
         size: 68px;
@@ -68,7 +69,7 @@ span {
 .home-img {
     display: none;
     position: absolute;
-    right: -25%;
+    right: -5%;
 }
 
 
@@ -135,6 +136,45 @@ span {
     }
 }
 
+.collection {
+    margin-top: 90px;
+}
+
+.collection-items {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .collection-item {
+        margin: 20px;
+    }
+    p {
+        color: #6C6C6C;
+        font: {
+            size: 16px;
+            weight: 400;
+            family: 'Libre Franklin';
+        }
+    }
+    .money-span {
+        color: #000;
+        font: {
+            size: 14px;
+            weight: 400;
+            family: 'Poppins';
+        }
+    }
+}
+
+.link {
+    text-align: center;
+}
+
+.shopping {
+    margin-top: 80px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
 
 @include mixins.media-sm {
 
@@ -167,4 +207,12 @@ span {
             width: 45%;
         }
     }
+
+    .collection-items {
+        justify-content: space-between;
+        .collection-item{
+        margin: 0;
+        }
+    }
+
 }

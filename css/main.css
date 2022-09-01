@@ -108,7 +108,7 @@ nav .shop img {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1000px;
+    width: 1200px;
   }
 }
 .home-container {
@@ -132,9 +132,10 @@ nav .shop img {
   font-size: 32px;
   font-weight: 700;
   font-family: "Poppins";
+  margin-bottom: 10px;
 }
 
-span {
+.and-span {
   color: #AC1313;
   font-size: 68px;
   font-weight: 700;
@@ -164,7 +165,7 @@ span {
 .home-img {
   display: none;
   position: absolute;
-  right: -25%;
+  right: -5%;
 }
 
 .tags {
@@ -227,6 +228,42 @@ span {
   font-family: "Poppins";
 }
 
+.collection {
+  margin-top: 90px;
+}
+
+.collection-items {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.collection-items .collection-item {
+  margin: 20px;
+}
+.collection-items p {
+  color: #6C6C6C;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Libre Franklin";
+}
+.collection-items .money-span {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+.link {
+  text-align: center;
+}
+
+.shopping {
+  margin-top: 80px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 @media screen and (min-width: 576px) {
   .heading-one {
     font-size: 48px;
@@ -251,9 +288,21 @@ span {
   .categories-content ul li {
     width: 45%;
   }
+  .collection-items {
+    justify-content: space-between;
+  }
+  .collection-items .collection-item {
+    margin: 0;
+  }
 }
 .home {
   background-image: url(../images/home-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.shopping {
+  background-image: url(../images/shop-bg.png);
   background-position: center;
   background-size: cover;
 }
