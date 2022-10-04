@@ -84,7 +84,6 @@ nav .shop img {
   }
 }
 .container {
-  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -106,7 +105,7 @@ nav .shop img {
     width: 900px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .container {
     width: 1200px;
   }
